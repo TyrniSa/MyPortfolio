@@ -126,10 +126,15 @@ a:hover {
 }
 /*FOOTER STYLING*/
 footer {
+  display:flex;
   bottom:0%;
   position:fixed;
   height:30px;
-  margin-left: 160px;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(231, 161, 23, 0.8);
+  color: black;
 }
 /*DARKMODE STYLING*/
 .darkmode {

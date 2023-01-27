@@ -1,0 +1,268 @@
+/*MAIN STYLING*/
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  max-width: 1200px;
+  font-size: 16px;
+  padding-left: 2rem;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  margin-left: 160px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+main {
+  margin-left: 160px;
+  margin-bottom: 30px;
+}
+h1{
+  margin: 0;
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+h2{
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif; 
+  color: #E7A117;
+  margin-top: 0;
+}
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+}
+p {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #E7A117;
+}
+a:hover {
+  color: #C57F1E;
+}
+#projects:hover h2{
+  color: #C57F1E;
+}
+/*SIDEBAR STYLING*/
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222832;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #949fb1;
+  display: block;
+}
+.sidebar a:hover {
+  color: #E7A117;
+}
+/*LAYOUT STYLING*/
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.column-1 img {
+  border-radius: 20px;
+}
+#slideshow-img{
+  display: none;
+}
+.fa-caret-right {
+  margin-right: 1rem;
+}
+.column-2 {
+  width: 35%;
+  text-align: center;
+  background-color: #222832;
+  color: #949fb1;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 20px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.column-2 p {
+  text-align: justify;
+}
+.column-2 img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 0;
+  filter: grayscale(50%) contrast(110%);
+}
+/*SKILLS STYLING*/
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#skills-container>* {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
+/*FOOTER STYLING*/
+footer {
+  bottom:0%;
+  position:fixed;
+  height:30px;
+  margin-left: 160px;
+}
+/*DARKMODE STYLING*/
+.darkmode {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  width: fit-content;
+}
+.darkmode p {
+  margin: 0;
+}
+.fa-toggle-off {
+  font-size: 1.5rem;
+}
+.fa-toggle-off:hover {
+  cursor: pointer;
+}
+.fa-toggle-on {
+  display: none;
+  font-size: 1.5rem;
+  color: #949fb1;
+}
+.fa-toggle-on:hover {
+  cursor: pointer;
+}
+/* SLIDESHOW STYLING*/
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #222832;
+}
+.text {
+  width: 90%;
+  text-align: left;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(231, 161, 23, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #C57F1E;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*CONTACT PAGE STYLING*/
+.icon-bar a {
+  float: left;
+  text-align: center;
+  width: 33%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 24px;
+  border-radius: 5px;
+  background-color: white;
+}
+#icon1:hover, #icon2:hover, #icon3:hover{
+  background-color: #E7A117;
+}
+#col-1 {
+  width: 40%;
+}
+#col-2{
+  width: 60%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .row{   
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .darkmode{
+    display: none;
+  }
+  .column-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .column-2 {
+    width: 100%;
+    text-align: center;
+    background-color: #222832;
+    border-radius: 20px;
+    width: 90%;
+  }
+  #col-1 {
+    width: 100%;
+  }
+  #col-2{
+    width: 90%;
+  }
+}

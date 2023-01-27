@@ -123,6 +123,7 @@ a:hover {
   font-size: 2em;
   width: 2em;
   margin-top: var(--spacing-1);
+  margin-bottom: 10px;
 }
 /*FOOTER STYLING*/
 footer {
@@ -269,5 +270,63 @@ footer {
   }
   #col-2{
     width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sidebar {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222832;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  .sidebar-text{
+    display:none;
+  }
+  header {
+    margin-left: 50px;
+  }
+  main {
+    margin-left: 50px;
+
+  }
+  .row{   
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .darkmode{
+    display: none;
+  }
+  .column-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+  }
+  .column-2 {
+    width: 100%;
+    text-align: center;
+    background-color: #222832;
+    border-radius: 20px;
+    width: 90%;
+    align-self: center;
+  }
+  #col-1 {
+    width: 100%;
+    align-self: center;
+  }
+  #col-2{
+    width: 90%;
+    align-self: center;
   }
 }

@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the html */
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  margin: 0 2%;
+  background-color: #2F3847;
+}
+/* Header/logo Title */
+.header {
+  padding: 1rem;
+  text-align: center;
+  background-color:#C57F1E;
+  color: white;
+}
+h1{
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+h2{
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif; 
+}
+p{
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #222832;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+a{
+  color: #C57F1E;
+  text-decoration: none;
+}
+a:hover{
+  color: #222832;
+  text-decoration: underline;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #e0ddd4;
+  padding: 1.25rem;
+}
+.img-side {
+  background-color: #E7A117;
+  width: 100%;
+  padding: 0.5rem;
+}
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 1.25rem;
+}
+.img-main {
+  background-color: #E7A117;
+  width: 80%;
+  padding: 0.5rem;
+}
+/* Footer */
+.footer {
+  padding: 1.25rem;
+  text-align: left;
+  background: #222832;
+  color:white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .header{
+    padding:1rem;
+  }
+  .header h2{
+    display:none;
+  }
+  .img-main {
+    background-color: #E7A117;
+    width: 100%;
+    padding: 0.5rem;
+  }
+}

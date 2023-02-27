@@ -125,6 +125,11 @@ a:hover {
   margin-top: var(--spacing-1);
   margin-bottom: 10px;
 }
+#skills-container .csharp{
+  height: 32px;
+  width: 28px;
+  margin-right: 36px;
+}
 /*FOOTER STYLING*/
 footer {
   display:flex;

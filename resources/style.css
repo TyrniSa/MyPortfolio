@@ -101,7 +101,7 @@ a:hover {
   margin-right: 1rem;
   margin-left: 1rem;
 }
-#about-me {
+.column-2 p {
   text-align: justify;
 }
 .column-2 img {

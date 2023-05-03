@@ -172,6 +172,9 @@ footer {
   cursor: pointer;
 }
 /* SLIDESHOW STYLING*/
+#caret-1{
+  cursor:pointer;
+}
 .slideshow-container {
   position: relative;
   margin: auto;

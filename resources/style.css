@@ -101,7 +101,7 @@ a:hover {
   margin-right: 1rem;
   margin-left: 1rem;
 }
-.column-2 p {
+#about-me {
   text-align: justify;
 }
 .column-2 img {
@@ -270,6 +270,7 @@ footer {
     background-color: #222832;
     border-radius: 20px;
     width: 90%;
+    align-self: center;
   }
   #col-1 {
     width: 100%;

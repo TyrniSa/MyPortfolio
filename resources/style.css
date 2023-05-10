@@ -100,8 +100,11 @@ a:hover {
   border-radius: 20px;
   margin-right: 1rem;
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#about-me {
+.column-2 p {
   text-align: justify;
 }
 .column-2 img {
@@ -169,6 +172,9 @@ footer {
   cursor: pointer;
 }
 /* SLIDESHOW STYLING*/
+#caret-1{
+  cursor:pointer;
+}
 .slideshow-container {
   position: relative;
   margin: auto;
@@ -236,12 +242,6 @@ footer {
 }
 #icon1:hover, #icon2:hover, #icon3:hover{
   background-color: #E7A117;
-}
-#col-1 {
-  width: 40%;
-}
-#col-2{
-  width: 60%;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */

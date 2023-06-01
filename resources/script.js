@@ -46,7 +46,7 @@ function darkMode() {
   document.getElementById("toggle-off").style.color = "white";
   document.getElementById("toggle-off").style.display = "none";
   document.getElementById("toggle-on").style.display = "block";
-  document.getElementById("csharp").style.filter="invert(100%)";
+  document.getElementById("csharp").style.filter="invert(1)";
 
 }
 
@@ -57,5 +57,5 @@ function normalMode() {
   document.getElementById("toggle-off").style.color = "black";
   document.getElementById("toggle-off").style.display = "block";
   document.getElementById("toggle-on").style.display = "none";
-  document.getElementById("csharp").style.filter="invert(0%)";
+  document.getElementById("csharp").style.filter="invert(0)";
 }
